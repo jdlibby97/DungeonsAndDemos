@@ -11,9 +11,9 @@ public class Main {
             Orc enemy = new Orc(defeated);
             if (defeated == 0){
                 // Need a special exception here so it's 'an Orc' not 'a Orc'
-                System.out.println("You come across an Orc.");
+                System.out.println("You come across an orc.");
             }else{
-                System.out.println("You come across a " + enemy.getName() +".");
+                System.out.println("You come across a " + enemy.getName().toLowerCase() +".");
             }
             while(you.getHp() > 0 && enemy.getHp() > 0){
                 System.out.println();
