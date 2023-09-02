@@ -18,7 +18,7 @@ public class Fireball extends Move{
         return "Shoot a fireball for " + (owner.getStrength() * 3) + " damage, but lose your next turn.";
     }
     String generateFlavor(){
-        return "The orc howls in pain as your flames deal " + owner.getStrength() + " damage!";
+        return "The orc howls in pain as your flames deal " + (owner.getStrength() * 3) + " damage!";
     }
 
     String generateBlockedFlavor(){
